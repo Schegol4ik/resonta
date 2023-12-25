@@ -5,7 +5,97 @@
   padding: 0 15px;
   height: 100%;
 
-  .wrapper_header{
+  .wrapper_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 94px;
 
+    .logo_header {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        max-height: 41px;
+        max-width: 198px;
+        color: var(--717171, #717171);
+        font-family: Times New Roman, sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 0 0 0 30px;
+      }
+
+    }
+
+    .others_header {
+      display: flex;
+      align-items: center;
+
+      .favorites_star {
+        margin: auto 38px;
+      }
+
+      .favorites_header {
+        display: flex;
+        align-items: center;
+        .basket_favorites {
+          background: no-repeat center url("../../assets/images/Ellipse_bsk.svg");
+          width: 46px;
+          height: 46px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 13px 0 0;
+          img {
+            width: 23px;
+            height: 21px;
+          }
+        }
+
+        .count_favorites {
+          margin: 0 15px 0 0 ;
+          span {
+            color: var(--717171, #717171);
+            font-family: Times New Roman, sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 130%; /* 19.5px */
+          }
+
+          .count_goods {
+            color: var(--0-e-2149, #0E2149);
+            font-family: Times New Roman, sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          .count_price {
+            color: var(--0-e-2149, #0E2149);
+            font-family: Abhaya Libre, sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%;
+          }
+
+          .count_currency {
+            color: var(--0-e-2149, #0E2149);
+            font-family: Roboto, sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%;
+          }
+        }
+
+      }
+
+    }
   }
 }
