@@ -32,8 +32,8 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <Navbar/>
             </div>
+            <Navbar/>
         </header>
     );
 };
